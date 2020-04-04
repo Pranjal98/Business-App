@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greeen"
+    tools:context=".SellerRegistrationProfileDetails">
+
+    <LinearLayout
+        android:id="@+id/topNavigationNewsFeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:weightSum="8"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:scaleY="1.5"
+            android:scaleX="1.5"
+            android:visibility="visible"
+            android:background="@drawable/white_button"
+            app:srcCompat="@drawable/menu" />
+
+        <ImageButton
+            android:id="@+id/place"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/white_button"
+            android:visibility="visible"
+            app:srcCompat="@drawable/place" />
+
+        <ImageButton
+            android:id="@+id/favourite"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/white_button"
+            android:visibility="visible"
+            app:srcCompat="@drawable/favourite" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:background="@drawable/search"
+            android:drawableRight="@drawable/search_icon"
+            android:elevation="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/purse"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleY="0.7"
+            android:scaleX="0.7"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/white_button"
+            android:visibility="visible"
+            app:srcCompat="@drawable/purse" />
+
+        <ImageButton
+            android:id="@+id/cart"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleY="0.7"
+            android:scaleX="0.7"
+            android:background="@drawable/white_button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/cart" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topNavigationNewsFeed"
+        android:layout_above="@+id/bottomNavigationNewsFeed"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="5dp"
+        android:background="@drawable/background_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/input"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:background="@color/customer_registration"
+                android:text="Seller Registration:"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/stepper_one"/>
+
+                    <View
+                        android:id="@+id/line2"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/stepper_one"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/dot1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:elevation="5dp"
+                    android:background="@drawable/three_dots"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/dot1"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Owner Details"
+                    android:layout_marginLeft="10dp"/>
+
+                <View
+                    android:id="@+id/dot2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:elevation="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/three_dots"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/dot2"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Shop Details"
+                    android:layout_centerHorizontal="true"/>
+
+                <View
+                    android:id="@+id/dot3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:elevation="5dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/three_dots"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/dot1"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Preview &amp; Submit"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/yourId"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/input"
+                android:drawableRight="@drawable/scan"
+                android:ems="10"
+                android:hint="Enter your Aadhar ID"
+                android:paddingRight="10dp"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Enter your Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/input"
+                    android:drawableRight="@drawable/location"
+                    android:ems="10"
+                    android:paddingRight="5dp"
+                    android:hint="Enter your Address"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/pinCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/input"
+                    android:ems="10"
+                    android:hint="Pin Code"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Enter Mobile Number"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Enter Email ID"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/newPassword"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Re enter Password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:text="Next"
+                android:onClick="next"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/greeen"
+                android:layout_margin="10dp"
+                android:textSize="14sp"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomNavigationNewsFeed"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="8"
+        android:background="@drawable/background_white"
+        android:elevation="5dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible"
+            android:background="@drawable/white_button"
+            app:srcCompat="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/nul"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/white_button"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/nul1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/white_button"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/nul2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/white_button"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/nul3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/white_button"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/nul4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/white_button"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/nul5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/white_button"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/profNewsFeed"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/white_button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/profile" />
+
+    </LinearLayout>
+
+</RelativeLayout>

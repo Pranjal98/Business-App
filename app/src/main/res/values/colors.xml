@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#333232</color>
+    <color name="gray">#44546A</color>
+    <color name="blue">#0A7ACE</color>
+    <color name="white">#00FFFFFF</color>
+    <color name="whitea">#FFFFFF</color>
+    <color name="greeen">#92D050</color>
+    <color name="carrier">#F2D6E6F7</color>
+    <color name="customer_registration">#EFEFEF</color>
+</resources>
