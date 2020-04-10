@@ -20,6 +20,7 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -29,6 +30,9 @@ import java.util.Locale;
 public class SellerRegistrationShopDetails extends AppCompatActivity {
 
     EditText shopName, shopPin, shopContact, shopEmail, gstNo;
+
+    TextView restaurant, hotel, sweet, category;
+
     Button shopLocation;
 
     LocationManager locationManager;
@@ -36,7 +40,51 @@ public class SellerRegistrationShopDetails extends AppCompatActivity {
 
     Uri img, interiorImg;
 
-    String add;
+    String add = "";
+
+    public void category(View view){
+
+        restaurant.setVisibility(View.VISIBLE);
+        hotel.setVisibility(View.VISIBLE);
+        sweet.setVisibility(View.VISIBLE);
+
+        restaurant.setEnabled(true);
+        hotel.setEnabled(true);
+        sweet.setEnabled(true);
+    }
+    public void restaurant(View view){
+
+        category.setText("RESTAURANT");
+        restaurant.setVisibility(View.INVISIBLE);
+        hotel.setVisibility(View.INVISIBLE);
+        sweet.setVisibility(View.INVISIBLE);
+
+        restaurant.setEnabled(false);
+        hotel.setEnabled(false);
+        sweet.setEnabled(false);
+    }
+    public void hotel(View view){
+
+        category.setText("HOTEL");
+        restaurant.setVisibility(View.INVISIBLE);
+        hotel.setVisibility(View.INVISIBLE);
+        sweet.setVisibility(View.INVISIBLE);
+
+        restaurant.setEnabled(false);
+        hotel.setEnabled(false);
+        sweet.setEnabled(false);
+    }
+    public void sweet(View view){
+
+        category.setText("SWEET SHOP");
+        restaurant.setVisibility(View.INVISIBLE);
+        hotel.setVisibility(View.INVISIBLE);
+        sweet.setVisibility(View.INVISIBLE);
+
+        restaurant.setEnabled(false);
+        hotel.setEnabled(false);
+        sweet.setEnabled(false);
+    }
 
     public void updateLocationInfo(Location location){
 
@@ -64,8 +112,13 @@ public class SellerRegistrationShopDetails extends AppCompatActivity {
 
                     address += listAddresses.get(0).getLocality();
                 }
+                if(listAddresses.get(0).getPostalCode() != null){
 
-                Toast.makeText(this, address, Toast.LENGTH_SHORT).show();
+//                    address += listAddresses.get(0).getPostalCode();
+                    shopPin.setText(listAddresses.get(0).getPostalCode());
+                }
+
+//                Toast.makeText(this, address, Toast.LENGTH_SHORT).show();
                 add = address;
             }
             else {
@@ -204,6 +257,10 @@ public class SellerRegistrationShopDetails extends AppCompatActivity {
         else if(interiorImg == null){
             Toast.makeText(this, "Please choose your shop interior image", Toast.LENGTH_SHORT).show();
         }
+        else if(add.equals(null) || add.equals("")){
+
+            Toast.makeText(this, "Please choose your Shop Address first!", Toast.LENGTH_SHORT).show();
+        }
         else{
 
             Intent intent = new Intent(SellerRegistrationShopDetails.this, SellerRegistrationPreview.class);
@@ -240,6 +297,11 @@ public class SellerRegistrationShopDetails extends AppCompatActivity {
         shopContact = findViewById(R.id.contactNumber);
         shopEmail = findViewById(R.id.email);
         gstNo = findViewById(R.id.gstNumber);
+
+        category = findViewById(R.id.category);
+        restaurant = findViewById(R.id.restaurant);
+        hotel = findViewById(R.id.hotel);
+        sweet = findViewById(R.id.sweet);
     }
 
     @Override

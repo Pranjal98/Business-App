@@ -113,10 +113,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="12dp"
             android:background="@drawable/input"
             android:orientation="vertical">
 
@@ -125,7 +125,7 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:padding="5dp"
                 android:background="@color/customer_registration"
                 android:text="Seller Registration:"
@@ -226,10 +226,7 @@
                 android:id="@+id/shopName"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="5dp"
+                android:layout_margin="5dp"
                 android:background="@drawable/input"
                 android:ems="10"
                 android:hint="Enter Shop Name"
@@ -248,27 +245,22 @@
                     android:id="@+id/pinCode"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_margin="5dp"
                     android:hint="Enter Shop Pin code"
                     android:background="@drawable/input"
                     android:inputType="number"
                     android:ems="10"
                     android:layout_weight="1"
                     android:padding="5dp"
-                    android:textSize="13sp" />
+                    android:textSize="14sp" />
 
                 <Button
                     android:id="@+id/chooseLocation"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
                     android:onClick="chooseLocation"
                     android:padding="5dp"
                     android:drawableRight="@drawable/location"
@@ -290,26 +282,21 @@
                     android:id="@+id/shopImage"
                     android:layout_width="180dp"
                     android:layout_height="35dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_margin="5dp"
                     android:textColor="@color/colorPrimary"
-                    android:background="@drawable/input"
+                    android:background="@drawable/card"
                     android:text="Upload From image of shop"
                     android:paddingRight="10dp"
                     android:layout_weight="1"
-                    android:padding="10dp"
-                    android:textSize="12sp" />
+                    android:padding="7dp"
+                    android:textSize="14sp" />
 
                 <Button
                     android:layout_width="30dp"
-                    android:layout_height="40dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:onClick="shopImage"
                     android:textStyle="bold"
                     android:background="@drawable/choose_button"
@@ -328,26 +315,21 @@
                     android:id="@+id/interiorShopImage"
                     android:layout_width="180dp"
                     android:layout_height="35dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_margin="5dp"
                     android:textColor="@color/colorPrimary"
-                    android:background="@drawable/input"
+                    android:background="@drawable/card"
                     android:text="Upload some Interior image of shop"
                     android:layout_weight="1"
-                    android:padding="10dp"
-                    android:textSize="12dp" />
+                    android:padding="7dp"
+                    android:textSize="14sp" />
 
                 <Button
                     android:layout_width="30dp"
-                    android:layout_height="40dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:onClick="shopInteriorImage"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:textStyle="bold"
                     android:background="@drawable/choose_button"
                     android:textAllCaps="false"
@@ -359,78 +341,130 @@
                 android:id="@+id/category"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/input"
+                android:layout_margin="5dp"
+                android:background="@drawable/card"
                 android:textColor="@color/colorPrimary"
                 android:text="Choose Shop Category"
-                android:padding="10dp"
+                android:padding="7dp"
+                android:onClick="category"
                 android:drawableRight="@drawable/dropdown"
                 android:inputType="textEmailAddress"
-                android:paddingLeft="10dp"
-                android:textSize="12sp" />
-
-            <EditText
-                android:id="@+id/contactNumber"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/input"
-                android:ems="10"
-                android:hint="Enter Shop Contact Number"
-                android:inputType="number"
-                android:paddingLeft="10dp"
                 android:textSize="14sp" />
 
-            <EditText
-                android:id="@+id/email"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/input"
-                android:ems="10"
-                android:hint="Enter Shop Contact Email id"
-                android:inputType="textEmailAddress"
-                android:paddingLeft="10dp"
-                android:textSize="14sp" />
+                android:layout_height="match_parent"
+                android:layout_marginTop="-5dp">
 
-            <EditText
-                android:id="@+id/gstNumber"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/input"
-                android:ems="10"
-                android:hint="GST Number"
-                android:inputType="text"
-                android:paddingLeft="10dp"
-                android:textSize="14sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:weightSum="3"
+                    android:elevation="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
 
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:text="Submit"
-                android:onClick="submit"
-                android:textStyle="bold"
-                android:layout_marginBottom="5dp"
-                android:textColor="@color/colorPrimary"
-                android:background="@color/greeen"
-                android:layout_margin="10dp"
-                android:textSize="16sp"
-                android:textAllCaps="false"/>
+                    <TextView
+                        android:id="@+id/restaurant"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAllCaps="true"
+                        android:padding="7dp"
+                        android:visibility="invisible"
+                        android:enabled="false"
+                        android:onClick="restaurant"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Restaurant"
+                        android:background="@drawable/card"/>
+
+                    <TextView
+                        android:id="@+id/hotel"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAllCaps="true"
+                        android:padding="7dp"
+                        android:enabled="false"
+                        android:visibility="invisible"
+                        android:onClick="hotel"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Hotel"
+                        android:background="@drawable/card"/>
+
+                    <TextView
+                        android:id="@+id/sweet"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAllCaps="true"
+                        android:padding="7dp"
+                        android:enabled="false"
+                        android:visibility="invisible"
+                        android:onClick="sweet"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Sweet Shop"
+                        android:background="@drawable/card"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/contactNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/input"
+                        android:ems="10"
+                        android:hint="Enter Shop Contact Number"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/input"
+                        android:ems="10"
+                        android:hint="Enter Shop Contact Email id"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="10dp"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/gstNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/input"
+                        android:ems="10"
+                        android:hint="GST Number"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:text="Submit"
+                        android:onClick="submit"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:background="@color/greeen"
+                        android:layout_margin="5dp"
+                        android:textSize="14sp"
+                        android:textAllCaps="false"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
         </LinearLayout>
 
     </LinearLayout>

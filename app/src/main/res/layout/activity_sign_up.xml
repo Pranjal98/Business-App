@@ -163,7 +163,7 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:padding="5dp"
                 android:background="@color/customer_registration"
                 android:text="Customer Registration:"
@@ -173,7 +173,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:weightSum="2"
-                android:padding="10dp"
+                android:padding="5dp"
                 android:orientation="horizontal">
 
                 <RadioButton android:id="@+id/radio_pirates"
@@ -198,8 +198,8 @@
             <EditText
                 android:id="@+id/yourId"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_margin="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
                 android:background="@drawable/input"
                 android:drawableRight="@drawable/scan"
                 android:ems="10"
@@ -207,19 +207,19 @@
                 android:paddingRight="10dp"
                 android:inputType="text"
                 android:paddingLeft="10dp"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/name"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_margin="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
                 android:background="@drawable/input"
                 android:ems="10"
                 android:hint="Enter your Name"
                 android:inputType="textPersonName"
                 android:paddingLeft="10dp"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -230,8 +230,8 @@
                 <EditText
                     android:id="@+id/address"
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_margin="10dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
                     android:background="@drawable/input"
                     android:drawableRight="@drawable/location"
                     android:ems="10"
@@ -239,81 +239,81 @@
                     android:hint="Enter your Address"
                     android:inputType="textPersonName"
                     android:paddingLeft="10dp"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
                 <EditText
                     android:id="@+id/pinCode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
                     android:background="@drawable/input"
                     android:ems="10"
                     android:hint="Pin Code"
                     android:inputType="number"
                     android:paddingLeft="10dp"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <EditText
                 android:id="@+id/mobile"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_margin="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
                 android:background="@drawable/input"
                 android:ems="10"
                 android:hint="Enter Mobile Number"
                 android:inputType="number"
                 android:paddingLeft="10dp"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_margin="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
                 android:background="@drawable/input"
                 android:ems="10"
                 android:hint="Enter Email ID"
                 android:inputType="textEmailAddress"
                 android:paddingLeft="10dp"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/password"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_margin="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
                 android:background="@drawable/input"
                 android:ems="10"
                 android:hint="Enter Password"
                 android:inputType="textPassword"
                 android:paddingLeft="10dp"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/newPassword"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_margin="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
                 android:background="@drawable/input"
                 android:ems="10"
                 android:hint="Re enter Password"
                 android:inputType="textPassword"
                 android:paddingLeft="10dp"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:text="Register"
                 android:textStyle="bold"
                 android:layout_marginBottom="5dp"
                 android:textColor="@color/colorPrimary"
                 android:background="@color/greeen"
-                android:layout_margin="10dp"
-                android:textSize="16sp"
+                android:layout_margin="5dp"
+                android:textSize="14sp"
                 android:textAllCaps="false"/>
         </LinearLayout>
 

@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 public class PartnerRegistrationPreview extends AppCompatActivity {
 
+    int chk= 0;
     LinearLayout card, submitted;
     CheckBox checkBox;
     ImageView dp;
@@ -22,18 +23,26 @@ public class PartnerRegistrationPreview extends AppCompatActivity {
 
     public void itemClicked(View v) {
 
+        chk = 1;
         checkBox = (CheckBox)v;
     }
 
     public void submit(View view) {
 
-        if(!checkBox.isChecked()){
+        if(chk == 1){
 
-            Toast.makeText(this, "Please Tick the Checkbox first", Toast.LENGTH_SHORT).show();
+            if(checkBox.isChecked()){
+
+                card.setVisibility(View.VISIBLE);
+                submitted.setAlpha(0.1f);
+            }
+            else {
+                Toast.makeText(this, "Please Tick the Checkbox first", Toast.LENGTH_SHORT).show();
+            }
         }
         else {
-            card.setVisibility(View.VISIBLE);
-            submitted.setAlpha(0.1f);        }
+            Toast.makeText(this, "Please Tick the Checkbox first", Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override
@@ -69,7 +78,7 @@ public class PartnerRegistrationPreview extends AppCompatActivity {
 
         for (String word : array) {
 
-            if ((temp.length() + word.length()) < 20) {  // create a temp variable and check if length with new word exceeds textview width.
+            if ((temp.length() + word.length()) < 35) {  // create a temp variable and check if length with new word exceeds textview width.
 
                 temp += " "+word;
 

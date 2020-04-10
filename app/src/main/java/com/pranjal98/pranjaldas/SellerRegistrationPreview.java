@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 public class SellerRegistrationPreview extends AppCompatActivity {
 
+    int chk= 0;
     LinearLayout card, submitted;
     CheckBox checkBox;
     ImageView shopImage, interiorShopImage;
@@ -23,18 +24,26 @@ public class SellerRegistrationPreview extends AppCompatActivity {
 
     public void itemClicked(View v) {
 
+        chk = 1;
         checkBox = (CheckBox)v;
     }
 
     public void submit(View view) {
 
-        if(!checkBox.isChecked()){
+        if(chk == 1){
 
-            Toast.makeText(this, "Please Tick the Checkbox first", Toast.LENGTH_SHORT).show();
+            if(checkBox.isChecked()){
+
+                card.setVisibility(View.VISIBLE);
+                submitted.setAlpha(0.1f);
+            }
+            else {
+                Toast.makeText(this, "Please Tick the Checkbox first", Toast.LENGTH_SHORT).show();
+            }
         }
         else {
-            card.setVisibility(View.VISIBLE);
-            submitted.setAlpha(0.1f);        }
+            Toast.makeText(this, "Please Tick the Checkbox first", Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override
@@ -78,7 +87,7 @@ public class SellerRegistrationPreview extends AppCompatActivity {
 
         for (String word : array) {
 
-            if ((temp.length() + word.length()) < 30) {  // create a temp variable and check if length with new word exceeds textview width.
+            if ((temp.length() + word.length()) < 35) {  // create a temp variable and check if length with new word exceeds textview width.
 
                 temp += " "+word;
 
@@ -98,7 +107,7 @@ public class SellerRegistrationPreview extends AppCompatActivity {
         shopName.setText(getIntent().getStringExtra("Shop Name"));
         shopLocation.setText(getIntent().getStringExtra("Shop Location") + ", " + getIntent().getStringExtra("Shop Pin"));
         shopContact.setText(" " + getIntent().getStringExtra("Shop Contact"));
-        shopEmail.setText(getIntent().getStringExtra("Shop Email"));
+        shopEmail.setText(" " + getIntent().getStringExtra("Shop Email"));
         gstNo.setText(getIntent().getStringExtra("GST NO"));
     }
 }

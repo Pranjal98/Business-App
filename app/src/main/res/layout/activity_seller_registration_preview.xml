@@ -114,10 +114,10 @@
             android:id="@+id/sub"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="12dp"
             android:background="@drawable/input"
             android:orientation="vertical">
 
@@ -231,14 +231,14 @@
                 <ImageView
                     android:id="@+id/interiorShopImage"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="80dp"
                     android:background="@drawable/interior_image_background"
                     android:scaleType="centerCrop" />
 
                 <ImageView
                     android:id="@+id/frontImage"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_marginLeft="7dp"
                     android:layout_marginTop="60dp"
                     android:background="@drawable/front_image_background"
@@ -255,7 +255,7 @@
                         android:id="@+id/shopName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="22sp"
+                        android:textSize="20sp"
                         android:layout_margin="5dp"
                         android:textColor="@color/colorPrimary"
                         android:text="Sastha Hyper Mall"/>
@@ -315,24 +315,24 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimary"
                 android:text="Owner Details"
-                android:textSize="20sp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"/>
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="5dp"/>
 
             <GridLayout
                 android:id="@+id/gridLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 android:columnCount="2">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     android:padding="3dp"
+                    android:textStyle="bold"
                     android:layout_row="0"
                     android:layout_column="0"
                     android:text="Name"
@@ -342,8 +342,9 @@
                     android:id="@+id/name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     android:padding="3dp"
+                    android:textStyle="bold"
                     android:layout_row="0"
                     android:layout_column="1"
                     android:text="ABC"
@@ -352,7 +353,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     android:padding="3dp"
                     android:layout_row="1"
                     android:layout_column="0"
@@ -363,7 +364,7 @@
                     android:id="@+id/address"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     android:padding="3dp"
                     android:layout_row="1"
                     android:layout_column="1"
@@ -373,7 +374,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     android:layout_row="2"
                     android:padding="3dp"
                     android:layout_column="0"
@@ -384,7 +385,7 @@
                     android:id="@+id/mobile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     android:layout_row="2"
                     android:padding="3dp"
                     android:layout_column="1"
@@ -394,7 +395,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     android:layout_row="3"
                     android:padding="3dp"
                     android:layout_column="0"
@@ -415,7 +416,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     android:padding="3dp"
                     android:layout_row="4"
                     android:layout_column="0"
@@ -426,7 +427,7 @@
                     android:id="@+id/yourId"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     android:layout_row="4"
                     android:padding="3dp"
                     android:layout_column="1"
@@ -464,7 +465,7 @@
             <Button
                 android:id="@+id/submit"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:text="Submit"
                 android:textStyle="bold"

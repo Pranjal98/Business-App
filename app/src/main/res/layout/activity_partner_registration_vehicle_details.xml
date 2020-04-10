@@ -113,10 +113,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="12dp"
             android:background="@drawable/input"
             android:orientation="vertical">
 
@@ -125,7 +125,7 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:padding="5dp"
                 android:background="@color/customer_registration"
                 android:text="Partner Registration:"
@@ -225,8 +225,8 @@
             <EditText
                 android:id="@+id/vehicleType"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_margin="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
                 android:background="@drawable/input"
                 android:drawableRight="@drawable/dropdown"
                 android:drawableLeft="@drawable/exclamation"
@@ -246,8 +246,8 @@
                 <EditText
                     android:id="@+id/drivingLicence"
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_margin="10dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
                     android:background="@drawable/input"
                     android:drawableLeft="@drawable/doubleexclamatory"
                     android:ems="10"
@@ -260,8 +260,8 @@
 
                 <Button
                     android:layout_width="30dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginRight="10dp"
                     android:onClick="drivingLicence"
                     android:layout_marginBottom="10dp"
@@ -283,8 +283,8 @@
                 <EditText
                     android:id="@+id/vahicleNumber"
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_margin="10dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
                     android:background="@drawable/input"
                     android:drawableLeft="@drawable/doubleexclamatory"
                     android:ems="10"
@@ -297,8 +297,8 @@
 
                 <Button
                     android:layout_width="30dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
@@ -314,7 +314,7 @@
             <Button
                 android:id="@+id/button3"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:text="Submit"
                 android:onClick="submit"
@@ -322,8 +322,8 @@
                 android:layout_marginBottom="5dp"
                 android:textColor="@color/colorPrimary"
                 android:background="@color/greeen"
-                android:layout_margin="10dp"
-                android:textSize="16sp"
+                android:layout_margin="5dp"
+                android:textSize="14sp"
                 android:textAllCaps="false"/>
 
         </LinearLayout>
